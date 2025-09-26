@@ -1,23 +1,14 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Inventario from "./pages/Inventario";
-
-function Home() {
-  return <h2>Bienvenido al POS</h2>;
-}
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import { useThemeStore } from "./store/useThemeStore"
 
 export default function App() {
+  const {theme} = useThemeStore();
+  document.documentElement.classList.toggle("dark", theme === "dark")
   return (
-    <BrowserRouter>
-      <nav style={{ padding: "1rem", background: "#eee" }}>
-        <Link to="/" style={{ marginRight: "1rem" }}>Inicio</Link>
-        <Link to="/inventario">Inventario</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/inventario" element={<Inventario />} />
-      </Routes>
-    </BrowserRouter>
+    <main className="flex h-screen bg-blue-light dark:bg-secondary-dark pr-3">
+      <Sidebar />
+      <Navbar />
+    </main>
   );
 }

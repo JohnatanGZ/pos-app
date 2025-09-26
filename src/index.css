@@ -5,14 +5,20 @@
 
 /* CONFIGURAR EL TEMA OSCURO */
 @theme{
-    --color-primary: #F5F8FF;
+    --color-primary-light: #FFFFFF;
+    --color-secondary-light: #F5F8FF;
     --color-primary-dark: #121212;
+    --color-secondary-dark: #333333;
+    --color-blue-high: #2196f3;
+    --color-blue-medium: #6eb8f5; 
+    --color-blue-normal: #9acef8;
+    --color-blue-light: #e8f5ff;
 }
 
 /* CLASES CSS PERSONALES */
 .activo{
-    @apply flex items-center gap-1 px-1 border-b-3 border-b-cyan-500 text-sky-500 hover:text-sky-500 transition-all duration-200 ease-in-out;
+    @apply flex items-center gap-2 px-2 py-1 my-2 border-b-2 border-transparent rounded-md bg-blue-high hover:-translate-y-1 text-white font-semibold transition-all duration-300 ease-in-out;
 }
 .inactivo{
-    @apply flex items-center gap-1 px-1 border-b-3 border-b-transparent hover:text-sky-500 transition-all duration-200 ease-in-out;
+    @apply flex items-center gap-2 px-2 py-1 my-2 border-b-2 border-transparent hover:-translate-y-1 hover:border-blue-high hover:text-blue-high dark:text-white transition-all duration-300 ease-in-out;
 }
