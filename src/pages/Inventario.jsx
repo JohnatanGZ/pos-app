@@ -23,7 +23,7 @@ export default function Inventario() {
   };
 
   return (
-    <div className="p-4">
+    <section className="w-full mt-25 ml-2 mb-2 p-5 rounded-2xl border border-gray-200 shadow-lg bg-primary-light dark:bg-primary-dark dark:border-transparent dark:text-white">
       <h2>Inventario</h2>
       <div>
         <input placeholder="Nombre" value={nuevo.nombre} onChange={e => setNuevo({ ...nuevo, nombre: e.target.value })} />
@@ -47,6 +47,6 @@ export default function Inventario() {
           ))}
         </tbody>
       </table>
-    </div>
+    </section>
   );
 }
