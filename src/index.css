@@ -16,9 +16,32 @@
 }
 
 /* CLASES CSS PERSONALES */
+/* - BOTON MODO OSCURO - */
 .activo{
     @apply flex items-center gap-2 px-2 py-1 my-2 border-b-2 border-transparent rounded-md bg-blue-high hover:-translate-y-1 text-white font-semibold transition-all duration-300 ease-in-out;
 }
 .inactivo{
     @apply flex items-center gap-2 px-2 py-1 my-2 border-b-2 border-transparent hover:-translate-y-1 hover:border-blue-high hover:text-blue-high dark:text-white transition-all duration-300 ease-in-out;
 }
+/* ------------------------------- */
+
+/* - LOGIN - */
+.bg-main-light{
+    @apply h-screen w-full bg-secondary-light dark:bg-radial-[at_50%_75%] dark:from-blue-light dark:via-blue-high dark:to-indigo-900 dark:to-90% flex justify-center items-center transition duration-500 ease-in-out
+}
+.bg-main-blue{
+    @apply h-screen w-screen bg-blue-high dark:bg-radial-[at_50%_75%] dark:from-gray-400 dark:via-secondary-dark dark:to-primary-dark dark:to-90% flex justify-center items-center transition duration-500 ease-in-out
+}
+.card-login{
+    @apply w-[550px] h-[700px] bg-blue-high dark:bg-secondary-dark dark:border-2 dark:border-blue-high rounded-bl-[100px] rounded-tr-[100px] shadow-xl shadow-gray-500 flex flex-col items-center z-10 py-10 rotate-y-0 transition-all duration-500 ease-in-out;
+}
+.card-login-hide{
+    @apply w-[550px] h-[700px] bg-blue-high rounded-bl-[100px] rounded-tr-[100px] shadow-xl shadow-gray-500 flex flex-col items-center z-0 py-10 rotate-y-180 transition-all duration-500 ease-in-out;
+}
+.card-register-hide{
+    @apply w-[550px] h-[700px] bg-primary-light rounded-br-[100px] rounded-tl-[100px] shadow-xl shadow-black/30 flex flex-col items-center z-0 py-10 rotate-y-180 transition-all duration-500 ease-in-out;
+}
+.card-register{
+    @apply w-[550px] h-[700px] bg-primary-light dark:bg-blue-high dark:border-2 dark:border-blue-light rounded-br-[100px] rounded-tl-[100px] shadow-xl shadow-black/30 flex flex-col items-center z-10 py-10 rotate-y-0 transition-all duration-500 ease-in-out;
+}
+/* ------------------------------- */
