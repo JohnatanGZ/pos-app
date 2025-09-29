@@ -19,6 +19,7 @@
     "electron": "^38.1.2",
     "electron-builder": "^26.0.12",
     "express": "^5.1.0",
+    "formik": "^2.4.6",
     "primeflex": "^4.0.0",
     "primereact": "^10.9.7",
     "react": "^19.1.1",
